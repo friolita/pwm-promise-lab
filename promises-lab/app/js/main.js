@@ -58,18 +58,18 @@ return	promiseOfImageName;
 
   function allFlags(promiseList) {
 
-    // use promise.all
+   
 
   }
 
 
-  // call the allFlags function
 
 
-  // use Promise.race
 
 
-  /* Helper functions */
+
+
+  
 
   function logSuccess(result) {
     console.log('Success!:\n' + result);
@@ -84,12 +84,12 @@ return	promiseOfImageName;
   }
 
   function fetchFlag(imageName) {
-    return fetch('flags/' + imageName); // fetch returns a promise
+    return fetch('flags/' + imageName); 
   }
 
   function processFlag(flagResponse) {
     if (!flagResponse.ok) {
-      throw Error('Bad response for flag request!'); // This will implicitly reject
+      throw Error('Bad response for flag request!'); 
     }
     return flagResponse.blob(); // blob() returns a promise
   }
@@ -107,9 +107,7 @@ return	promiseOfImageName;
     return 'chile.png';
   }
 
-  // Don't worry if you don't understand this, it's not part of Promises.
-  // We are using the JavaScript Module Pattern to enable unit testing of
-  // our functions.
+ 
   return {
     getImageName: (getImageName),
     flagChain: (flagChain),
